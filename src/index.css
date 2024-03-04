@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bavi";
+  src: url("../fonts/Bavistage.otf");
+}
+
+.bavi {
+  font-family: "bavi";
+}
+
+.unique-shadow {
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-shadow {
+  box-shadow: 0 8px 30px rgb(0,0,0,0.12);
+}
