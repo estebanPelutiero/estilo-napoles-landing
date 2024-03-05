@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import MostOrders from "./components/MostOrders"
 import Nav from "./components/Nav"
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <MostOrders />
       <About />
+      <Footer />
     </>
   )
 }

@@ -18,3 +18,86 @@
 .card-shadow {
   box-shadow: 0 8px 30px rgb(0,0,0,0.12);
 }
+
+/* Carta */
+
+.card {
+  width: 21.875rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  width: 21.875rem;
+  min-height: 5rem;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* border-bottom: 3px solid #fefefe; */
+  background: linear-gradient(40deg, #B42129 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  transition: all 0.5s ease;
+}
+
+.card * {
+  z-index: 1;
+}
+
+.image {
+  width: 7.5rem;
+  height: 7.5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+}
+
+.card:hover::before {
+  width: 21.875rem;
+  height: 20rem;
+  border-bottom: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(0.95);
+}
+
+.card:hover .card-info {
+  transform: translate(0%,-10%);
+}
+
+.card:hover .image {
+  transform: scale(2) translate(-50%,-35%) rotate(90deg);
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+
+  .card::before {
+    width: 100%;
+  }
+
+  .card:hover::before {
+    width: 100%;
+  }
+}
+

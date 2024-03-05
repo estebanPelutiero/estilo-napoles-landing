@@ -210,7 +210,7 @@ const Nav = () => {
           </Collapse>
         </nav>
       </div>
-      <div className="fixed top-[63px] z-50 bg-[url('./assets/bordeIrregularFino.svg')] w-full h-6 bg-no-repeat"></div>
+      <div className="fixed top-[63px] z-50 bg-[url('./assets/bordeIrregularFino.svg')] w-full h-6 bg-no-repeat drop-shadow-sm"></div>
     </>
   );
 };
