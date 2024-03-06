@@ -1,29 +1,18 @@
 import React from "react";
 import Layout from "./Layout";
-import Whatsapp from "../assets/whatsapp.svg";
 import Cuatroque from "../assets/imgs/cuatroque.png";
 import Barrilete from "../assets/imgs/barrilete_cosmico.png";
 import Mortadela from "../assets/imgs/mortadela.png";
-import {
-  Collapse,
-  Button,
-  Card,
-  Typography,
-  CardBody,
-} from "@material-tailwind/react";
 
 const MostOrders = () => {
-  const [open, setOpen] = React.useState(false);
-
-  const toggleOpen = () => setOpen((cur) => !cur);
-
   return (
-    <Layout className={""}>
+    <Layout className={"h-fit"}>
       <h2 className="text-5xl lg:text-7xl text-blue bavi mb-8 lg:mb-16 text-center">
         Lo que mas sale
       </h2>
 
-      <section className="flex flex-col md:flex-row gap-8">
+      <section className="flex flex-wrap justify-between flex-col md:flex-row gap-8">
+        
         <article className="card group shadow-xl overflow-hidden">
           <div className="image">
             <img className="drop-shadow-lg" src={Cuatroque} alt="" />

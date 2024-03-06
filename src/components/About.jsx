@@ -1,17 +1,49 @@
 import React from "react";
 import Layout from "./Layout";
-import AboutPic from "../assets/imgs/about.webp";
+import AboutPic1 from "../assets/imgs/1.jpg";
+import AboutPic2 from "../assets/imgs/2.png";
+import AboutPic3 from "../assets/imgs/3.jpg";
+import AboutPic4 from "../assets/imgs/4.jpg";
 
 const About = () => {
   return (
     <>
-      <Layout className={"flex flex-col md:flex-row items-center pb-24"}>
-        <figure className="w-full lg:w-1/2 flex justify-center">
-          <img
-            className="w-full lg:w-[80%] rounded-lg mb-8 lg:mb-0"
-            src={AboutPic}
-            alt="Cocina a la vista del público con horno de barro"
-          />
+      <Layout
+        className={
+          "flex flex-col lg:flex-row items-center justify-between h-fit pb-24"
+        }
+      >
+        <figure className="w-full lg:w-[45%] flex justify-center">
+          <div className="parent">
+            <div className="div1">
+              <img
+                className="rounded-lg shadow-xl w-full h-full object-cover"
+                src={AboutPic1}
+                alt=""
+              />
+            </div>
+            <div className="div2">
+              <img
+                className="rounded-lg shadow-xl w-full h-full object-cover"
+                src={AboutPic3}
+                alt=""
+              />
+            </div>
+            <div className="div3">
+              <img
+                className="rounded-lg shadow-xl w-full h-full object-cover"
+                src={AboutPic4}
+                alt=""
+              />
+            </div>
+            <div className="div4">
+              <img
+                className="rounded-lg shadow-xl w-full h-full object-cover"
+                src={AboutPic2}
+                alt=""
+              />
+            </div>
+          </div>
         </figure>
         <div className="w-full lg:w-1/2">
           <h2 className="text-5xl lg:text-7xl text-blue bavi mb-8">Nosotros</h2>
