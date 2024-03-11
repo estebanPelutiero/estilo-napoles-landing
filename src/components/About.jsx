@@ -10,10 +10,10 @@ const About = () => {
     <>
       <Layout
         className={
-          "flex flex-col lg:flex-row items-center justify-between h-fit pb-24"
+          "flex flex-col lg:flex-row items-center justify-between pb-24"
         }
       >
-        <figure className="w-full lg:w-[45%] flex justify-center">
+        <figure className="w-full h-full lg:w-[45%] flex justify-center">
           <div className="parent">
             <div className="div1">
               <img

@@ -6,8 +6,8 @@ import "../index.css";
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden bg-[url('./assets/imgs/heroImg.jpg')] bg-cover bg-center z-[-1] w-full">
-      <div className="overflow-x-hidden absolute z-0 w-full h-[100vh] backdrop-brightness-[.5]"></div>
+    <div className="overflow-hidden bg-[url('./assets/imgs/heroImg.jpg')] bg-cover bg-center z-[-1] w-full h-svh lg:h-[100vh]">
+      <div className="overflow-x-hidden absolute z-0 w-full backdrop-brightness-[.5] h-svh lg:h-[100vh]"></div>
       <Layout id={"home"} className="relative z-10 flex items-center">
         <div className="w-full">
           <div className="mb-14 text-center text-white">
